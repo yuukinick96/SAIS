@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Games</title>
+	<style>
+		.main{
+			display:flex;
+			position: absolute;
+			justify-content: center;
+			width:100%;
+			height:100%;
+		}
+table tr{
+	width:100%;
+	height:100%;
+}
+
+td{
+	width: 50%;
+	height: 100%;
+	padding-bottom: 50px;
+}
+.card{
+	background-color: transparent;
+	perspective: 1000px;
+	width:300px;
+	height:300px;
+}
+
+.card img{
+	width: 300px;
+	height:300px;
+}
+
+.inner{
+	position:relative;
+	width:100%;
+	height:100%;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+}
+.card:hover .inner{
+	transform: rotateX(180deg);
+}
+
+.front, .back{
+	position:absolute;
+	width: 100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	backface-visibility: hidden;
+	-webkit-backface-visibility:hidden;
+	color:blue;
+
+}
+
+.back{
+	background-color: black;
+	transfrom: rotateX(180deg);
+}
+
+
+
+
+	</style>
+
+</head>
+<body>
+<div class = "main">
+<table class = "center">
+<tr>
+	<td>
+		<div class = "card"> 
+			<div class = "inner">
+				<div class = "image">
+					<img src = "https://www.cnet.com/a/img/resize/958bbc197ec8217f7fb05dca169164130b66a9ee/2022/04/04/aad713cf-f054-4504-87d3-7fd7f2bbd0af/attack-on-titan-final-season-part-3.jpg?auto=webp&fit=crop&height=675&precrop=1500,1178,x0,y556&width=1200" class = "front">
+				 </div>
+				<div class = "back">
+					<p> Attack on Titan </p>
+				</div>
+			</div>
+		</div>
+	</td>
+<td>
+		<div class = "card"> 
+			<div class = "inner">
+				<div class = "image">
+					<img src = "https://japantoday-asset.scdn3.secure.raxcdn.com/img/store/6c/b0/7850c84fd3907f8da6a5a9a7ff929e60c162/onepieceanime.jpg" class = "front">
+				 </div>
+				<div class = "back">
+					<p> One Piece </p>
+				</div>
+			</div>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class = "card"> 
+			<div class = "inner">
+				<div class = "image">
+					<img src = "https://static.wikia.nocookie.net/bungostraydogs/images/8/8b/Season_3_Visual.png/revision/latest?cb=20210206155017" class = "front">
+				 </div>
+				<div class = "back">
+					<p> Bruno Stray Dogs </p>
+				</div>
+			</div>
+		</div>
+	</td>
+<td>
+		<div class = "card"> 
+			<div class = "inner">
+				<div class = "image">
+					<img src = "https://somoskudasai.com/wp-content/uploads/2021/11/image-176.png" class = "front">
+				 </div>
+				<div class = "back">
+					<p> Sword Art Online </p>
+				</div>
+			</div>
+		</div>
+	</td>
+</tr>
+
+
+
+
+</table>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
